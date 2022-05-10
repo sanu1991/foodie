@@ -20,7 +20,7 @@ const Cart = () => {
     return (
         <>
             {Cart.length ?
-                <div className="container-fluid" style={{ margin: "10px 0 50px 0" }}>
+                <div className="container-fluid cart" style={{ margin: "10px 0 50px 0" }}>
                     <div>
                         <div class="table-responsive" style={{ height: "330px", overflowY: "scroll", backgroundColor: "#f2f1ed" }}>
                             <table class="table table-dark">
@@ -36,14 +36,14 @@ const Cart = () => {
                                 <tbody>
                                     {Cart.map((curItem) => (
                                         <tr key={curItem.id}>
-                                            <td class="align-middle fs-4">
+                                            <td class="align-middle">
                                                 <Link to={`details/${curItem.id}`} style={{ textDecoration: "none", color: "white" }}>
                                                     <img onClick={() => dispatch({ type: "VIEW_DETAILS", id: curItem.id, curItem })} style={{ height: "3rem" }} src={curItem.image} alt="error!" />
                                                     {curItem.name}
                                                 </Link>
                                             </td>
 
-                                            <td class="align-middle fs-4">{curItem.price} ₹ </td>
+                                            <td class="align-middle">{curItem.price} ₹ </td>
 
                                             <td class="align-middle">
                                                 <div class="input-group quantity" style={{ width: '100px' }} >
@@ -62,8 +62,8 @@ const Cart = () => {
                                                 </div>
                                             </td>
 
-                                            <td class="align-middle fs-4">{curItem.price * curItem.qty} ₹</td>
-                                            <td class="align-middle text-danger fs-4"><div onClick={() => dispatch1({ type: "DEL", id: curItem.id, curItem })}><FaTrashAlt /></div></td>
+                                            <td class="align-middle">{curItem.price * curItem.qty} ₹</td>
+                                            <td class="align-middle text-danger"><div onClick={() => dispatch1({ type: "DEL", id: curItem.id, curItem })}><FaTrashAlt /></div></td>
 
 
                                         </tr>

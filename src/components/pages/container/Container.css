@@ -116,6 +116,11 @@ line-height: 30px;
 }
 
 
+@media (max-width: 576px) { 
+  .cart table{
+    font-size:3vw;
+  }
+ }
 
 /* Responsive css code  */
 /* // X-Small devices (portrait phones, less than 576px) */
