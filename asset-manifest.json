@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/foodie/static/css/main.e8acb97b.css",
-    "main.js": "/foodie/static/js/main.524b7d72.js",
+    "main.css": "/foodie/static/css/main.86c366b7.css",
+    "main.js": "/foodie/static/js/main.58fb8c36.js",
     "static/media/slider.jpg": "/foodie/static/media/slider.cc8bd83035053e3324bb.jpg",
     "static/media/slider1.jpg": "/foodie/static/media/slider1.388622b931c28a361362.jpg",
     "static/media/slider2.jpg": "/foodie/static/media/slider2.315164e52fcd577cdc82.jpg",
@@ -10,11 +10,11 @@
     "static/media/welcome.jpg": "/foodie/static/media/welcome.1fad724a8a41763a4ae1.jpg",
     "static/media/foods.png": "/foodie/static/media/foods.21010bc952bc3190baf6.png",
     "index.html": "/foodie/index.html",
-    "main.e8acb97b.css.map": "/foodie/static/css/main.e8acb97b.css.map",
-    "main.524b7d72.js.map": "/foodie/static/js/main.524b7d72.js.map"
+    "main.86c366b7.css.map": "/foodie/static/css/main.86c366b7.css.map",
+    "main.58fb8c36.js.map": "/foodie/static/js/main.58fb8c36.js.map"
   },
   "entrypoints": [
-    "static/css/main.e8acb97b.css",
-    "static/js/main.524b7d72.js"
+    "static/css/main.86c366b7.css",
+    "static/js/main.58fb8c36.js"
   ]
 }
