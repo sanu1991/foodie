@@ -43,7 +43,7 @@ const Reservation = () => {
             <section className="container p-5" >
                 <div class="text-center animate__animated animate__bounce pb-5">
                     <p class="hvr-grow heading" style={{ fontSize: "4vw" }}>Reservation Form</p>
-                    <hr class="mx-auto" style={{ color: "red", height: "0.5vh", width: "22vw" }} />
+                    <hr class="mx-auto" style={{ color: "red", height: "0.3vh", width: "30vw" }} />
                 </div>
                 <form class="row g-3 mx-auto fs-5" onSubmit={handleSubmit}>
                     <div class="col-md-12">

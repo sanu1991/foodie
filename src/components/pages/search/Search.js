@@ -22,14 +22,14 @@ const Search = () => {
 
                 <section class="my-5">
                     <div class="text-center pb-5">
-                        <p class="hvr-grow" style={{ fontSize: "4vw" }}> Order food online</p>
-                        <hr class="mx-auto" style={{ color: "red", height: "1vh", width: "32vw" }} />
+                        <p class="hvr-grow heading" style={{ fontSize: "4vw" }}> Order food online</p>
+                        <hr class="mx-auto" style={{ color: "red", height: "0.3vh", width: "30vw" }} />
                     </div>
 
 
                     <div class="mx-5" style={{ height: "800px", overflowY: "scroll", backgroundColor: "#f2f1ed" }}>
                         <div class="container pt-4">
-                            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5  g-4">
+                            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5  g-4">
 
                                 {Fakedata.map((curItem) => (
                                     <div class="col mx-auto" key={curItem.id} >

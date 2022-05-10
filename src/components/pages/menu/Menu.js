@@ -49,15 +49,15 @@ const Menu = () => {
                 <section class="my-5">
                     <div class="text-center pb-5">
                         <p class="hvr-grow heading" style={{ fontSize: "4vw" }}> Order food online</p>
-                        <hr class="mx-auto" style={{ color: "red", height: "1vh", width: "32vw" }} />
+                        <hr class="mx-auto" style={{ color: "red", height: "0.3vh", width: "30vw" }} />
                     </div>
 
                     <div class="container mx-auto" style={{ maxWidth: "95vw" }}>
-                        <div class="row row-cols-2">
+                        <div class="row row-cols-xs-1 row-cols-sm-2">
 
-                            <div class="col-xl-2 col-3" style={{ padding: "0px" }}>
+                            <div class=" col-sm-2 col-12 mb-4" style={{ padding: "0px" }}>
                                 <div class="dropdown">
-                                    <button class="btn btn-danger dropdown-toggle w-100" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <button class="btn btn-danger dropdown-toggle w-100" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style={{ fontSize: "12px" }}>
                                         CATEGORIES
                                     </button>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -72,15 +72,15 @@ const Menu = () => {
                                 </div>
                             </div>
 
-                            <div class="col-xl-10 col-9">
+                            <div class=" col-sm-10 col-12">
                                 <div style={{ height: "800px", overflowY: "scroll", backgroundColor: "#f2f1ed" }}>
                                     <div class="container-fluid pt-4">
                                         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4  g-4">
                                             {/* {Fakedata.map((curItem) => ( */}
                                             {/* pagination  */}
                                             {Fakedata.slice(offset, offset + PER_PAGE).map((curItem) => (
-                                                <div class="col">
-                                                    <div key={curItem.id} class="card" >
+                                                <div class="col" key={curItem.id} >
+                                                    <div class="card" >
                                                         <Link to={`details/${curItem.id}`}>
                                                             <img src={curItem.image} class="card-img-top img-fluid" style={{ height: "12rem" }} alt="error" onClick={() => dispatch({ type: "VIEW_DETAILS", id: curItem.id, curItem })} />
                                                         </Link>
